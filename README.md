@@ -1,1 +1,0 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/33me25ptxo75s8bc?svg=true)](https://ci.appveyor.com/project/Vesnushkka/pure-function)

@@ -1,11 +1,15 @@
-import defineHealthGrade from "../index.js";
+import { swordsman, sortObj} from "../index.js";
 
-test("checkHealthGrade", () => {
-    const testUser = {
-        name: "Маг",
-        health: 90,
-    };
+test("checkSortOrder", () => {
 
-    const result = defineHealthGrade(testUser);
-    expect(result).toBe("healthy");
+    const result = sortObj(swordsman);
+    expect(result).toBe(
+        [
+            {key: "name", value: "мечник"}, 
+            {key: "level", value: 2}, 
+            {key: "attack", value: 80}, 
+            {key: "defence", value: 40}, 
+            {key: "health", value: 10} 
+          ]
+    );
 });
