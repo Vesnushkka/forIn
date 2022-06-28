@@ -17,7 +17,7 @@ export function sortObj(obj, firstPart) {
   }
   secondPart.sort();
   
-  return [...firstPart, ...secondPart].map((key) => ({ key: key, value: obj[key] }));;
+  return [...firstPart, ...secondPart].map((key) => ({ key: key, value: obj[key]}));;
 }
 
 sortObj(swordsman, sortOrder)

@@ -1,9 +1,9 @@
-import { swordsman, sortObj} from "../index.js";
+import { swordsman, sortObj, sortOrder} from "../index.js";
 
 test("checkSortOrder", () => {
 
-    const result = sortObj(swordsman);
-    expect(result).toBe(
+    const result = sortObj(swordsman, sortOrder);
+    expect(result).toEqual(
         [
             {key: "name", value: "мечник"}, 
             {key: "level", value: 2}, 
